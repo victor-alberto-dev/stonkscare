@@ -17,6 +17,16 @@ Sistema de Controle Financeiro Pessoal - Desenvolvimento Web 2
 ### Pré-requisitos
 - Python 3.10+
 - Node.js 18+
+- Git
+
+---
+
+### Clonar o repositório
+
+```bash
+git clone https://github.com/victor-alberto-dev/stonkscare
+cd stonkscare
+```
 
 ---
 
