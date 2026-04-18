@@ -92,6 +92,15 @@ class ConselhoIAOut(BaseModel):
     class Config:
         from_attributes = True
 
+# Usuario update
+class UsuarioUpdate(BaseModel):
+    nome_usuario: Optional[str] = None
+    email_usuario: Optional[str] = None
+
+class SenhaUpdate(BaseModel):
+    senha_atual: str
+    nova_senha: str
+
 # Dashboard
 class DashboardOut(BaseModel):
     saldo_atual: float

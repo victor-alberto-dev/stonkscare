@@ -5,6 +5,7 @@ import RegisterPage from './pages/RegisterPage'
 import DashboardPage from './pages/DashboardPage'
 import TransacoesPage from './pages/TransacoesPage'
 import MetasPage from './pages/MetasPage'
+import PerfilPage from './pages/PerfilPage'
 import Layout from './components/Layout'
 
 function PrivateRoute({ children }) {
@@ -30,6 +31,7 @@ export default function App() {
             <Route index element={<DashboardPage />} />
             <Route path="transacoes" element={<TransacoesPage />} />
             <Route path="metas" element={<MetasPage />} />
+            <Route path="perfil" element={<PerfilPage />} />
           </Route>
         </Routes>
       </BrowserRouter>

@@ -1,6 +1,6 @@
 import { Outlet, NavLink, useNavigate } from 'react-router-dom'
 import { useAuth } from '../contexts/AuthContext'
-import { LayoutDashboard, ArrowLeftRight, Target, LogOut, TrendingUp } from 'lucide-react'
+import { LayoutDashboard, ArrowLeftRight, Target, LogOut, TrendingUp, UserCircle } from 'lucide-react'
 
 export default function Layout() {
   const { user, logout } = useAuth()
@@ -15,6 +15,7 @@ export default function Layout() {
     { to: '/', icon: LayoutDashboard, label: 'Dashboard' },
     { to: '/transacoes', icon: ArrowLeftRight, label: 'Transações' },
     { to: '/metas', icon: Target, label: 'Metas' },
+    { to: '/perfil', icon: UserCircle, label: 'Perfil' },
   ]
 
   return (
